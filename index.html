@@ -11,10 +11,6 @@
 
 <link rel="stylesheet" href="css/style.css">
 
-<script nonce="553a1a1d-7749-40cf-b317-0e5c82b2d6af">
-  (function(w,d){!function(a,b,c,d){a[c]=a[c]||{};a[c].executed=[];a.zaraz={deferred:[],listeners:[]};a.zaraz.q=[];a.zaraz._f=function(e){return async function(){var f=Array.prototype.slice.call(arguments);a.zaraz.q.push({m:e,a:f})}};for(const g of["track","set","debug"])a.zaraz[g]=a.zaraz._f(g);a.zaraz.init=()=>{var h=b.getElementsByTagName(d)[0],i=b.createElement(d),j=b.getElementsByTagName("title")[0];j&&(a[c].t=b.getElementsByTagName("title")[0].text);a[c].x=Math.random();a[c].w=a.screen.width;a[c].h=a.screen.height;a[c].j=a.innerHeight;a[c].e=a.innerWidth;a[c].l=a.location.href;a[c].r=b.referrer;a[c].k=a.screen.colorDepth;a[c].n=b.characterSet;a[c].o=(new Date).getTimezoneOffset();if(a.dataLayer)for(const n of Object.entries(Object.entries(dataLayer).reduce(((o,p)=>({...o[1],...p[1]})),{})))zaraz.set(n[0],n[1],{scope:"page"});a[c].q=[];for(;a.zaraz.q.length;){const q=a.zaraz.q.shift();a[c].q.push(q)}i.defer=!0;for(const r of[localStorage,sessionStorage])Object.keys(r||{}).filter((t=>t.startsWith("_zaraz_"))).forEach((s=>{try{a[c]["z_"+s.slice(7)]=JSON.parse(r.getItem(s))}catch{a[c]["z_"+s.slice(7)]=r.getItem(s)}}));i.referrerPolicy="origin";i.src="/cdn-cgi/zaraz/s.js?z="+btoa(encodeURIComponent(JSON.stringify(a[c])));h.parentNode.insertBefore(i,h)};["complete","interactive"].includes(b.readyState)?zaraz.init():a.addEventListener("DOMContentLoaded",zaraz.init)}(w,d,"zarazData","script");})(window,document);
-</script>
-
 </head>
 <body>
 
@@ -36,42 +32,32 @@
               <div class="contact-wrap w-100 p-md-5 p-4">
                 <h3 class="mb-4">Enter Your Tour Details</h3>
                 
-                <form method="POST" id="tourForm" name="tourForm" class="contactForm">
-                  <div class="row">
-
-                    <div class="col-md-6">
-                      <div class="form-group">
-                        <label class="label" for="name">Artist Name</label>
-                        <input type="text" class="form-control" name="name" id="name" placeholder="Your name">
-                      </div>
-                    </div>
-
-                    <div class="col-md-6">
-                      <div class="form-group">
-                        <label class="label" for="listeners">Monthly Listeners</label>
-                        <input type="number" class="form-control" name="listeners" id="listeners" placeholder="Listeners">
-                      </div>
-                    </div>
-
-                    <div class="col-md-12">
-                      <div class="form-group">
-                        <label class="label" for="locations">Tour Locations</label>  
-                        <textarea name="locations" class="form-control" id="locations" cols="30" rows="4" placeholder="Enter cities separated by commas"></textarea>
-                      </div>
-                    </div>
-
-                    <div class="col-md-12">
-                      <input type="submit" value="Plan My Tour" class="btn btn-primary">
-                    </div>
-
+                <form id="tourForm">
+                  
+                  <div class="form-group">
+                    <label for="name">Artist Name</label>
+                    <input type="text" id="name" autocomplete="name" class="form-control" placeholder="Your name">
                   </div>
+
+                  <div class="form-group">
+                    <label for="listeners">Monthly Listeners</label>
+                    <input type="number" id="listeners" autocomplete="listeners" class="form-control" placeholder="Listeners">
+                  </div>
+
+                  <div class="form-group">
+                    <label for="locations">Tour Locations</label>
+                    <textarea id="locations" class="form-control" autocomplete="locations" rows="4" placeholder="Enter cities separated by commas"></textarea>
+                  </div>
+
+                  <input type="submit" value="Plan My Tour" class="btn btn-primary">
+
                 </form>
 
               </div>
             </div>
             
             <div class="col-md-5 d-flex align-items-stretch">
-              <div class="info-wrap w-100 p-5 img" style="background-image: url(images/img.jpg);">
+              <div class="info-wrap w-100 p-5 img" style="background-image: url(/images/img3.jpg);">
               </div>
             </div>
 
@@ -82,15 +68,7 @@
   </div>
 </section>
 
-<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
-
-<script src="js/jquery.min.js"></script>
-<script src="js/popper.js"></script>
-<script src="js/bootstrap.min.js"></script>
-<script src="js/jquery.validate.min.js"></script>
-<script src="js/main.js"></script>
-
-<script defer src="https://static.cloudflareinsights.com/beacon.min.js/v8b253dfea2ab4077af8c6f58422dfbfd1689876627854" integrity="sha512-bjgnUKX4azu3dLTVtie9u6TKqgx29RBwfj3QXYt5EKfWM/9hPSAI/4qcV5NACjwAo8UtTeWefx6Zq5PHcMm7Tg==" data-cf-beacon='{"rayId":"807a843908d93b69","token":"cd0b4b3a733644fc843ef0b185f98241","version":"2023.8.0","si":100}' crossorigin="anonymous"></script>
+<script src="main.js"></script>
 
 </body>
 </html>
