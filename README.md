@@ -1,5 +1,5 @@
 # Roadie
-HackMIT 2023
+## Project for HackMIT 2023
 
 <img src="https://github.com/danielgao20/Roadie/blob/main/static/images/roadie.png" alt="Roadie Landing Page" width="500">
 
