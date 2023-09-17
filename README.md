@@ -23,9 +23,21 @@ With Roadie, artists can easily plan their tour by entering a list of target cit
 
 Roadie stands out as the first platform directly catering to indie artists in tour planning. Existing tour management software primarily targets tour managers and provides a different level of direct access and cost reduction for artists. We offer direct access and cost savings that were previously out of reach for artists, putting their tour planning needs front and center.
 
-## How we built it
+## Tech Stack 🛠️
 
-Html, CSS, Python, Beautiful Soup, Pandas, Flask, Selenium, Javascript, Figma, Spotify APIi, GPT 3.5
+![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)
+![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
+![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
+![Pandas](https://img.shields.io/badge/pandas-%23150458.svg?style=for-the-badge&logo=pandas&logoColor=white)
+![Flask](https://img.shields.io/badge/flask-%23000.svg?style=for-the-badge&logo=flask&logoColor=white)
+![Selenium](https://img.shields.io/badge/-selenium-%43B02A?style=for-the-badge&logo=selenium&logoColor=white)
+![ChatGPT](https://img.shields.io/badge/chatGPT-74aa9c?style=for-the-badge&logo=openai&logoColor=white)
+![Spotify](https://img.shields.io/badge/Spotify-1ED760?style=for-the-badge&logo=spotify&logoColor=white)
+![Figma](https://img.shields.io/badge/figma-%23F24E1E.svg?style=for-the-badge&logo=figma&logoColor=white)
++ Beautiful Soup
+
+## How we Built it
 
 Our mission was to solve the “Traveling Salesman Problem”, a transportation optimization problem for artists, a task often marked by complexity. To accommodate the touring preferences of smaller indie artists, limiting the number of cities to a maximum of 10 is prudent. We implemented a swift brute-force search algorithm for this scenario, swiftly delivering optimal solutions. Should the need arise for more extensive tours, we ventured into the realm of heuristic and approximation algorithms, notably considering Christofides' Algorithm for transportation optimization.
 
