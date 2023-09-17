@@ -3,7 +3,7 @@ Project for HackMIT 2023:
 
 <img src="https://github.com/danielgao20/Roadie/blob/main/static/images/roadie.png" alt="Roadie Landing Page" width="500">
 
-## Inspiration
+## Inspiration 🌟
 
 We decided to create Roadie with a profound purpose rooted in our team's diverse background encompassing music, computer science, business, operations planning, and a shared love of indie rock. Our collective mission was clear: to craft a service to democratize and empower independent "indie" musicians.
 
@@ -11,9 +11,9 @@ In the world of indie music, these immensely talented artists face a unique and 
 
 In the ever-changing music industry, technology has transformed indie music. Social media and streaming have opened doors for indie artists. Today, a microphone and a computer can launch a music career. While online platforms offer global exposure, streaming and royalties alone are not enough for indie artists to in terms of income. Live performances are now crucial for indie musicians' financial survival.
 
-Our goal is simple: to simplify the arduous process of touring for independent musicians by eliminating the need for intermediaries such as tour managers and booking agents. By doing so, we aim to enhance artists' financial sustainability, bolstering their bottom line and ultimately enabling them to continue doing what they love most: creating music that resonates with audiences far and wide. At its core, Roadie is driven by a profound love for music and the passionate artists who create it.
+Our goal is simple: to simplify the arduous process of touring for independent musicians by eliminating the need for intermediaries such as tour managers and booking agents. By doing so, we aim to enhance artists' financial sustainability, bolstering their bottom line and ultimately enabling them to continue doing what they love most: creating music that resonates with audiences far and wide. At its core, Roadie is driven by a profound love for music and the passionate artists who create it. ❤️
 
-## What it does
+## What it does 🚀
 
 Roadie offers a comprehensive suite of services to indie artists, including: 
 * Tour Routing / Optimization: Finding the most cost-effective travel options for artists. Venue
@@ -37,7 +37,7 @@ Roadie stands out as the first platform directly catering to indie artists in to
 ![Figma](https://img.shields.io/badge/figma-%23F24E1E.svg?style=for-the-badge&logo=figma&logoColor=white)
 + Beautiful Soup
 
-## How we Built it
+## How we Built it 🔧
 
 Our mission was to solve the “Traveling Salesman Problem”, a transportation optimization problem for artists, a task often marked by complexity. To accommodate the touring preferences of smaller indie artists, limiting the number of cities to a maximum of 10 is prudent. We implemented a swift brute-force search algorithm for this scenario, swiftly delivering optimal solutions. Should the need arise for more extensive tours, we ventured into the realm of heuristic and approximation algorithms, notably considering Christofides' Algorithm for transportation optimization.
 
@@ -45,7 +45,7 @@ Our choice to define edge weights based on flight prices was strategic, recogniz
 
 Curating a comprehensive database of concert venues across the United States was an exhaustive task. Surprisingly, existing datasets fell short of our needs, compelling us to scour the web for a suitable source. Harnessing the tenacity of our team and the power of Selenium, we scraped over 300 subpages to extract invaluable data, meticulously cataloguing each venue's name, address, and capacity. The result was a meticulously sorted dataset, faithfully serving our vision of optimizing concert tours for artists.
 
-## Challenges we ran into
+## Challenges we ran into 🧩
 
 We encountered several challenges during our project:
 
@@ -67,7 +67,7 @@ Lack of GPT Credit
 * We wrote functional code to integrate an AI Chatbot into our service to help streamline the functionality and help users. Unfortunately, we ran out of GPT Credit and could not implement this into our project. 
 
 
-## Accomplishments that we're proud of
+## Accomplishments that we're proud of 🏆
 
 1. Innovative Data Solution
 We are proud of our ability to devise a novel solution to obtain monthly data from Spotify users when it was not readily available through the API. This innovative approach has empowered us to provide more prosperous and more insightful recommendations to our users, enhancing their overall experience.
@@ -85,7 +85,7 @@ Our ability to ideate and organize operations efficiently is another source of p
 Teamwork is at the core of our success. Our diverse and talented team members collaborate seamlessly to tackle complex challenges, share knowledge, and support one another. Our teamwork formed an environment where innovative ideas flourish, and each team member's unique strengths contribute to our collective success.
 
 
-## What we learned
+## What we learned 🌱
 
 Rapid Problem-Solving
 * We honed our ability to quickly analyze and solve complex problems under time constraints, a crucial skill for agile development.
@@ -102,7 +102,7 @@ Music Industry Insights
 These newfound skills and knowledge empower our team to excel in future projects and contribute to our ongoing growth and success.
 
 
-## What's next for Roadie
+## What's next for Roadie 🚀
 
 To further enhance the user experience for Roadie, we have several exciting next steps in the pipeline:
 
