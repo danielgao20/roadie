@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tour Results</title>
+    <!-- Link to the same stylesheet used in index.html -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <section class="ftco-section">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-6 text-center mb-5">
+                    <h2 class="heading-section">Submitted Tour Details</h2>
+                </div>
+            </div>
+
+            <div class="row justify-content-center">
+                <div class="col-md-12">
+                    <div class="wrapper">
+                        <div class="row no-gutters">
+                            <div class="col-md-7">
+                                <div class="contact-wrap w-100 p-md-5 p-4">
+                                    <div id="result-container">
+                                        <p><strong>Artist Name:</strong> <span id="name"></span></p>
+                                        <p><strong>Monthly Listeners:</strong> <span id="listeners"></span></p>
+                                        <p><strong>Tour Locations:</strong> <span id="locations"></span></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-5 d-flex align-items-stretch">
+                                <div class="info-wrap w-100 p-5 img" style="background-image: url(/images/img3.jpg);">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Include the same JavaScript file as in index.html -->
+    <script src="main.js"></script>
+
+    <script>
+        // Get query parameters from the URL
+        const urlParams = new URLSearchParams(window.location.search);
+
+        // Retrieve and display the submitted data
+        const name = urlParams.get('name');
+        const listeners = urlParams.get('listeners');
+        const locations = urlParams.get('locations');
+
+        document.getElementById('name').textContent = name;
+        document.getElementById('listeners').textContent = listeners;
+        document.getElementById('locations').textContent = locations;
+    </script>
+</body>
+</html>

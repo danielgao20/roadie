@@ -5,7 +5,6 @@ const locationsInput = document.getElementById('locations');
 
 // Handle form submit
 document.getElementById('tourForm').addEventListener('submit', function(e) {
-
   // Prevent actual submit
   e.preventDefault();
   
@@ -17,4 +16,6 @@ document.getElementById('tourForm').addEventListener('submit', function(e) {
   // Log or access values
   console.log(name, listeners, locations);
 
+  // Redirect to results page with query parameters
+  window.location.href = `results.html?name=${encodeURIComponent(name)}&listeners=${encodeURIComponent(listeners)}&locations=${encodeURIComponent(locations)}`;
 });
