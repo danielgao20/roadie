@@ -1,6 +1,8 @@
 # Roadie
 HackMIT 2023
 
+<img src="https://github.com/danielgao20/](https://github.com/danielgao20/Roadie/blob/main/static/images/roadie.png" alt="Home Page" width="500">
+
 ## Inspiration
 
 We decided to create Roadie with a profound purpose rooted in our team's diverse background encompassing music, computer science, business, operations planning, and a shared love of indie rock. Our collective mission was clear: to craft a service to democratize and empower independent "indie" musicians.
