@@ -1,5 +1,5 @@
 # Roadie
-Project for HackMIT 2023
+Project for HackMIT 2023:
 
 <img src="https://github.com/danielgao20/Roadie/blob/main/static/images/roadie.png" alt="Roadie Landing Page" width="500">
 
@@ -25,14 +25,13 @@ Roadie stands out as the first platform directly catering to indie artists in to
 
 ## How we built it
 
-Html, Css, Python, Beautiful Soup, Pandas, Flask, Selenium, Javascript, Figma, Spotify APIi, GPT 3.5
+Html, CSS, Python, Beautiful Soup, Pandas, Flask, Selenium, Javascript, Figma, Spotify APIi, GPT 3.5
 
-Our mission was to solve the “Traveling Salesman Problem”, a transportation optimization problem, for artists, a task often marked by complexity. To accommodate the touring preferences of smaller indie artists, limiting the number of cities to a maximum of 10 is prudent. We implemented a swift brute-force search algorithm for this scenario, swiftly delivering optimal solutions. Should the need arise for more extensive tours, we ventured into the realm of heuristic and approximation algorithms, notably considering Christofides' Algorithm for transportation optimization.
+Our mission was to solve the “Traveling Salesman Problem”, a transportation optimization problem for artists, a task often marked by complexity. To accommodate the touring preferences of smaller indie artists, limiting the number of cities to a maximum of 10 is prudent. We implemented a swift brute-force search algorithm for this scenario, swiftly delivering optimal solutions. Should the need arise for more extensive tours, we ventured into the realm of heuristic and approximation algorithms, notably considering Christofides' Algorithm for transportation optimization.
 
 Our choice to define edge weights based on flight prices was strategic, recognizing economics's pivotal role in an artist's touring decisions. We navigated the challenges of integrating flight price APIs, acknowledging the inherent complexity in handling such data.
 
-Curating a comprehensive database of concert venues across the United States was an exhaustive task. Surprisingly, existing datasets fell short of our needs, compelling us to scour the web for a suitable source. Harnessing the tenacity of our team and power of Selenium, 
-, we scraped over 300 subpages to extract invaluable data, meticulously cataloging each venue's name, address, and capacity. The result was a meticulously sorted dataset, faithfully serving our vision of optimizing concert tours for artists.
+Curating a comprehensive database of concert venues across the United States was an exhaustive task. Surprisingly, existing datasets fell short of our needs, compelling us to scour the web for a suitable source. Harnessing the tenacity of our team and the power of Selenium, we scraped over 300 subpages to extract invaluable data, meticulously cataloguing each venue's name, address, and capacity. The result was a meticulously sorted dataset, faithfully serving our vision of optimizing concert tours for artists.
 
 ## Challenges we ran into
 
@@ -53,7 +52,7 @@ Optimization Problem:
 Overcoming these challenges required dedication, teamwork, and a commitment to expanding our technical expertise.
 
 Lack of GPT Credit 
-* We wrote functional code to integrate an AI Chatbot into our service to help streamline the functionality and help users. Unfortunately we ran out of GPT Credit and could not implement this into our project. 
+* We wrote functional code to integrate an AI Chatbot into our service to help streamline the functionality and help users. Unfortunately, we ran out of GPT Credit and could not implement this into our project. 
 
 
 ## Accomplishments that we're proud of
@@ -62,7 +61,7 @@ Lack of GPT Credit
 We are proud of our ability to devise a novel solution to obtain monthly data from Spotify users when it was not readily available through the API. This innovative approach has empowered us to provide more prosperous and more insightful recommendations to our users, enhancing their overall experience.
 
 2. Front-End Development
-Prior to this project, our team had no experience with front end web development. While it took hard work, we take pride in our platform's user-friendly, visually appealing, and responsive design, which has garnered positive feedback and improved user engagement.
+Prior to this project, our team had no experience with front-end web development. While it took hard work, we take pride in our platform's user-friendly, visually appealing, and responsive design, which has garnered positive feedback and improved user engagement.
 
 3. Resourceful Problem Solving
 When faced with challenges in obtaining data from flight APIs, we showcased our resourcefulness by finding effective workarounds. This adaptability and problem-solving mindset have enabled us to provide comprehensive travel information to our users, even when traditional data sources pose limitations.
@@ -71,7 +70,7 @@ When faced with challenges in obtaining data from flight APIs, we showcased our 
 Our ability to ideate and organize operations efficiently is another source of pride. We have cultivated a culture of innovation and creativity within our team, allowing us to continually refine our product and work quickly.
 
 5. Collaborative Teamwork
-Teamwork is at the core of our success. Our diverse and talented team members collaborate seamlessly to tackle complex challenges, share knowledge, and support one another. Our teamwork formed an environment where innovative ideas flourish and each team member's unique strengths contribute to our collective success.
+Teamwork is at the core of our success. Our diverse and talented team members collaborate seamlessly to tackle complex challenges, share knowledge, and support one another. Our teamwork formed an environment where innovative ideas flourish, and each team member's unique strengths contribute to our collective success.
 
 
 ## What we learned
