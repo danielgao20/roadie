@@ -1,7 +1,7 @@
 # Roadie
 HackMIT 2023
 
-<img src="https://github.com/danielgao20/](https://github.com/danielgao20/Roadie/blob/main/static/images/roadie.png" alt="Home Page" width="500">
+<img src="https://github.com/danielgao20/Roadie/blob/main/static/images/roadie.png" alt="Roadie Landing Page" width="500">
 
 ## Inspiration
 
