@@ -9,7 +9,7 @@
 
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
-<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="static/style.css">
 
 </head>
 <body style="background-color: rgb(251,243,235);">
@@ -82,7 +82,11 @@
     
     <div class="row justify-content-center">
       <div class="col-md-6 text-center mb-5">
+<<<<<<< HEAD:index.html
         <h2 class="section"><strong>Hi! Welcome to Roadie!</strong></h2>
+=======
+        <h2 class="heading-section">Welcome to <strong>Roadie</strong></h2>
+>>>>>>> 25594e4341c925a7b6b84684a41c1461e4a9584c:templates/index.html
         <p class="subtext">Take your show on the road</p>
       </div>
     </div>
@@ -100,13 +104,8 @@
                 <form id="tourForm">
                   
                   <div class="form-group">
-                    <label for="name">Artist Name</label>
-                    <input type="text" id="name" autocomplete="name" class="form-control" placeholder="Your name">
-                  </div>
-
-                  <div class="form-group">
-                    <label for="listeners">Monthly Listeners</label>
-                    <input type="number" id="listeners" autocomplete="listeners" class="form-control" placeholder="Listeners">
+                    <label for="artistLink">Spotify Artist Link</label>
+                    <input type="text" id="artistLink" autocomplete="url" class="form-control" placeholder="Spotify Artist Link">
                   </div>
 
                   <div class="form-group">
@@ -127,7 +126,7 @@
               }
             </style>
             <div class="col-md-5 d-flex align-items-stretch">
-              <div class="info-wrap w-100 p-5 img" style="background-image: url(/images/img3.jpg);">
+              <div class="info-wrap w-100 p-5 img" style="background-image: url(/static/images/img3.jpg);">
               </div>
             </div>
 
@@ -138,7 +137,7 @@
   </div>
 </section>
 
-<script src="main.js"></script>
+<script src="static/main.js"></script>
 
 </body>
 </html>

@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tour Results</title>
     <!-- Link to the same stylesheet used in index.html -->
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="static/style.css">
 </head>
 <body>
     <section class="ftco-section">
@@ -23,14 +23,15 @@
                             <div class="col-md-7">
                                 <div class="contact-wrap w-100 p-md-5 p-4">
                                     <div id="result-container">
-                                        <p><strong>Artist Name:</strong> <span id="name"></span></p>
-                                        <p><strong>Monthly Listeners:</strong> <span id="listeners"></span></p>
-                                        <p><strong>Tour Locations:</strong> <span id="locations"></span></p>
+                                        <p><strong>Artist Name:</strong> <span id="name">{{artist_name}}</span></p>
+                                        <p><strong>Monthly Listeners:</strong> <span id="listeners">{{monthly_listeners}}</span></p>
+                                        <!-- <p><strong>Link: </strong> <span id="artistLink"></span></p> -->
+                                        <p><strong>Tour Locations:</strong> <span id="locations">{{locations}}</span></p>
                                     </div>
                                 </div>
                             </div>
                             <div class="col-md-5 d-flex align-items-stretch">
-                                <div class="info-wrap w-100 p-5 img" style="background-image: url(/images/img3.jpg);">
+                                <div class="info-wrap w-100 p-5 img" style="background-image: url(static/images/img3.jpg);">
                                 </div>
                             </div>
                         </div>
@@ -41,20 +42,22 @@
     </section>
 
     <!-- Include the same JavaScript file as in index.html -->
-    <script src="main.js"></script>
+    <script src="static/main.js"></script>
 
-    <script>
+    <!-- <script>
         // Get query parameters from the URL
         const urlParams = new URLSearchParams(window.location.search);
 
         // Retrieve and display the submitted data
         const name = urlParams.get('name');
         const listeners = urlParams.get('listeners');
+        // const artistLink = urlParams.get('artistLink');
         const locations = urlParams.get('locations');
 
         document.getElementById('name').textContent = name;
         document.getElementById('listeners').textContent = listeners;
+        // document.getElementById('artistLink').textContent = artistLink;
         document.getElementById('locations').textContent = locations;
-    </script>
+    </script> -->
 </body>
 </html>
