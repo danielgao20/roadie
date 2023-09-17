@@ -10,13 +10,18 @@ def hello_world():
 @app.route("/results")
 def results():
     artist_url = request.args.get('artistLink', '')
-    print(artist_url)
+    # print(artist_url)
     html = get_spotify_artist_page(artist_url)
     artist_name, monthly_listeners = extract_artist_info(html)
-    print(artist_name)
-    print(monthly_listeners)
+    # print(artist_name)
+    # print(monthly_listeners)
     locations = request.args.get('locations', '')
-    print(locations)
+    # print(locations)
+
+    # Retrieve "dollar" and "distances" from query parameters
+    # dollar = int(request.args.get('dollar', 0))
+    # distances = json.loads(request.args.get('distances', '[]'))
+    
     return render_template("results.html", artist_name=artist_name, monthly_listeners=monthly_listeners, locations=locations)
 
-app.run(debug=True, port=8000)
+app.run(debug=True, port=8011)

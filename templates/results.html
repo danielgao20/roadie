@@ -7,7 +7,44 @@
     <!-- Link to the same stylesheet used in index.html -->
     <link rel="stylesheet" href="static/style.css">
 </head>
-<body>
+<style>
+    /* Fixed header styles */
+    header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      background-color: rgba(254,242,232, 0.9); /* Set your desired background color */
+      z-index: 1000; /* Adjust the z-index as needed */
+      padding: 10px; /* Add padding for spacing */
+      display: flex;
+      /* align-items: center; */
+      align-items: center;
+      vertical-align: middle;
+    }
+  
+    .logo-img {
+      border-radius: 15px;
+      margin-right: 10px; /* Add spacing between logo and text */
+      margin-left: 15%;
+    }
+  
+    .heading-section {
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      color: #ca9169;
+    }
+  
+    /* Add padding to the page content to avoid overlapping with the fixed header */
+    body {
+      
+      padding-top: 60px; /* Adjust as needed based on the header height */
+    }
+  </style>
+  <header>
+    <img src="/static/images/logo.png" alt="logo" width="75" height="75" class="logo-img">
+    <h2 class="heading-section"><strong>Roadie</strong></h2>
+  </header>
+<body style="background-color: rgb(251,243,235);">
     <section class="ftco-section">
         <div class="container">
             <div class="row justify-content-center">
@@ -27,6 +64,45 @@
                                         <p><strong>Monthly Listeners:</strong> <span id="listeners">{{monthly_listeners}}</span></p>
                                         <!-- <p><strong>Link: </strong> <span id="artistLink"></span></p> -->
                                         <p><strong>Tour Locations:</strong> <span id="locations">{{locations}}</span></p>
+                                        <!-- <p><strong>Total cost of trip, starting at:</strong> <span id="dollar"></span></p>
+                                        <p><strong>Distances:</strong></p> -->
+                                        <!-- <pre id="distances"></pre> -->
+                                        <!-- Optimal Route -->
+                                        <p><strong>Optimal Route:</strong></p>
+                                        <ul>
+                                            <li>Start at Boston</li>
+                                            <li>Go to New York (215 miles)</li>
+                                            <li>Go to New Jersey (5 miles)</li>
+                                        </ul>
+
+                                        <!-- Venue Options -->
+                                        <p><strong>Venue Options (at each location):</strong></p>
+                                        <ul>
+                                            <li>Boston:
+                                                <ul>
+                                                    <li>The Middle East, Cambridge</li>
+                                                    <li>Great Scott, Allston</li>
+                                                    <li>Café 939, Berklee</li>
+                                                </ul>
+                                            </li>
+                                            <li>New York:
+                                                <ul>
+                                                    <li>Mercury Lounge, Lower East Side</li>
+                                                    <li>Baby's All Right, Williamburg</li>
+                                                    <li>Rockwood Music Hall, Lower East Side</li>
+                                                </ul>
+                                            </li>
+                                            <li>New Jersey:
+                                                <ul>
+                                                    <li>The Saint, Asbury Park</li>
+                                                    <li>The Brighton Bar, Long Branch</li>
+                                                    <li>The Stone Pony, Asbury Park</li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+
+                                        <!-- Total Cost -->
+                                        <p><strong>Total Cost, Starting At:</strong> $1,825</p>
                                     </div>
                                 </div>
                             </div>
@@ -41,8 +117,10 @@
         </div>
     </section>
 
+    <!-- Include distanceCalculator.js first -->
+    <script type="module" src="static/distanceCalculator.js"></script>
     <!-- Include the same JavaScript file as in index.html -->
-    <script src="static/main.js"></script>
+    <script type="module" src="static/main.js"></script>
 
     <!-- <script>
         // Get query parameters from the URL
